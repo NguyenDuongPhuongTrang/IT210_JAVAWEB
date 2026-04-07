@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Optional;
+import java.util.stream.Collectors;
 
 @Controller
 public class HomeController {
@@ -32,6 +34,7 @@ public class HomeController {
 
     @GetMapping({"/", "/home"})
     public String getStudents(@RequestParam(value = "sortBy", required = false) String sortBy,
+                              @RequestParam(value = "search", required = false) String search,
                               Model model) {
 
         List<Student> sortedStudents = new ArrayList<>(students);
@@ -51,10 +54,15 @@ public class HomeController {
         }
 
         //LỌC DỮ LIỆU
-
+        if (search != null) {
+            sortedStudents = sortedStudents.stream()
+                    .filter(s -> s.getFullName().toLowerCase().contains(search.toLowerCase())).toList();
+        }
 
         model.addAttribute("students", sortedStudents);
         model.addAttribute("currentSort", sortBy);
+        model.addAttribute("search", search);
+        model.addAttribute("totalSearch", sortedStudents.size());
         return "home";
     }
 
@@ -72,5 +80,43 @@ public class HomeController {
 
         model.addAttribute("s", student);
         return "studentDetail";
+    }
+
+    @GetMapping("/dashboard")
+    public String dashboard(Model model) {
+        // Tổng số sinh viên
+        int totalStudent = students.size();
+        model.addAttribute("totalStudent", totalStudent);
+
+        // Phần trăm sinh viên trạng thái đang học
+        double studyingPercentage = (double) students.stream()
+                .filter(s -> s.getStatus() == StudentStatus.STUDYING)
+                .count() / totalStudent * 100;
+        model.addAttribute("studyingPercentage", studyingPercentage);
+
+        // Phần trăm sinh viên trạng thái đã tốt nghiệp
+        double graduatedPercentage = (double) students.stream()
+                .filter(s -> s.getStatus() == StudentStatus.GRADUATED)
+                .count() / totalStudent * 100;
+        model.addAttribute("graduatedPercentage", graduatedPercentage);
+
+        //  Phần trăm sinh viên trạng thái bảo lưu
+        double reservedPercentage = (double) students.stream()
+                .filter(s -> s.getStatus() == StudentStatus.RESERVED)
+                .count() / totalStudent * 100;
+        model.addAttribute("reservedPercentage", reservedPercentage);
+
+        // GPA trung bình.
+        Double average = students.stream()
+                .mapToDouble(Student::getGpa)
+                .average()
+                .orElse(0.0);
+        model.addAttribute("averageGpa", average);
+
+        // Tìm người có điểm GPA cao nhất
+        Optional<Student> studentWithHighestGpa = students.stream()
+                .max(Comparator.comparingDouble(Student::getGpa));
+        model.addAttribute("studentWithHighestGpa", studentWithHighestGpa.orElse(null));
+        return "dashboard";
     }
 }

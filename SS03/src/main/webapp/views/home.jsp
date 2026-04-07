@@ -78,6 +78,15 @@
         </tr>
     </c:forEach>
     </tbody>
+    <c:if test="${search.length() >0}">
+        <tfoot>
+        <tr>
+            <td colspan="8">
+                <c:out value="Tìm thấy ${totalSearch} sinh viên phù hợp"/>
+            </td>
+        </tr>
+        </tfoot>
+    </c:if>
 </table>
 
 <!-- Optional JavaScript -->
