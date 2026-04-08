@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8a7213a7-b801-441b-b858-f219d80d0cbc" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Bai1/src/main/java/ss04/bai1/controller/LegacyController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Bai1/src/main/java/ss04/bai1/service/OrderRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Bai1/src/main/java/ss04/bai1/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ss04/bai2/controller/MenuController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai3/src/main/java/ss04/bai3/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai4/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai4/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS04_LT/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../LÝ THUYẾT/SS04_LT/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS04_LT/.idea/material_theme_project_new.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../LÝ THUYẾT/SS04_LT/.idea/material_theme_project_new.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_C:/Users/USER/OneDrive/Desktop/IT210_JAVAWEB/SS04/bai2" value="3C4Xj7ErcyjtMcmwE2p7n4UhRtF" />
+    </persistenceIdMap>
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3C4Xj7ErcyjtMcmwE2p7n4UhRtF" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/USER/OneDrive/Desktop/IT210_JAVAWEB/SS04/bai2",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\USER\OneDrive\Desktop\IT210_JAVAWEB\SS04\bai2\src\main\java\ss04\bai2" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="bai2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="bai2" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Tomcat 11.0.20" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 11.0.20" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment>
+        <artifact name="Gradle : ss04 : bai2-1.0-SNAPSHOT.war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/Gradle___ss04___bai2_1_0_SNAPSHOT_war" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings />
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Gradle : ss04 : bai2-1.0-SNAPSHOT.war" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8a7213a7-b801-441b-b858-f219d80d0cbc" name="Changes" comment="" />
+      <created>1775645950045</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1775645950045</updated>
+      <workItem from="1775645954602" duration="1262000" />
+      <workItem from="1775648205017" duration="812000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
+  </component>
+</project>
