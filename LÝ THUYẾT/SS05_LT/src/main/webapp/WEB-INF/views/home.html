@@ -1,15 +1,10 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: USER
-  Date: 4/8/2026
-  Time: 9:34 AM
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{fragment/layout}">
 <head>
-    <title>DETAIL</title>
+    <title>Title</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -19,9 +14,20 @@
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-<h1>CHI TIẾT DỰ ÁN</h1>
-
-
+<div layout:fragment="content">
+    <div class="container">
+        <h1 class="text-center">HELLO</h1>
+        <h3 class="text-center"><span th:text="${message}"></span></h3>
+        <br>
+        <h3>Hiển thị dữ liệu với vòng lặp trong thymeleaf</h3>
+        <p th:each="data : ${list}" th:text = "${data}"></p>
+        <br>
+        <h3>Sử dụng thẻ if với thymeleaf</h3>
+        <p th:if="${list.size() > 0}">Có dữ liệu</p>
+        <p th:if="${list.size() == 0}">Không có dữ liệu</p>
+        <br>
+    </div>
+</div>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

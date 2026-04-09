@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <title>Layout</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+<!-- HEADER -->
+<header class="text-dark mt-3 mx-5">
+    <img src="https://static.ybox.vn/2024/11/6/1732952492691-logo-rikkei2.png" alt="logo" width="150" height="50">
+    <hr class="mt-3 mb-0">
+</header>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light px-0">
+    <div class="container p-0">
+        <a class="navbar-brand font-weight-bold m-0" href="#">EDU-PATH</a>
+
+        <div>
+            <a class="nav-link d-inline" th:href="@{/courses/course-list}">
+                Danh sách khóa học
+            </a>
+            <a class="nav-link d-inline" th:href="@{/courses/course-add}">
+                Đăng ký tư vấn
+            </a>
+        </div>
+    </div>
+</nav>
+
+<!-- CONTENT -->
+<main class="container my-3 flex-fill p-0" layout:fragment="content">
+    <div>ĐÂY LÀ NỘI DUNG</div>
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-light text-dark text-center py-3 mt-auto">
+    <p class="mb-0">@ 2026 | EDU-PATH | NHÓM 1</p>
+</footer>
+
+<!-- JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
