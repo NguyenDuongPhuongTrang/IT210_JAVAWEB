@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Theme Page</title>
+
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container text-center mt-5">
+
+    <h3 class="mb-4">Choose Theme</h3>
+
+    <form th:action="@{/change-theme}" method="post" class="mb-4">
+        <button type="submit" name="theme" value="white"
+                class="btn btn-light mr-2">
+            Light Theme
+        </button>
+
+        <button type="submit" name="theme" value="black"
+                class="btn btn-dark">
+            Dark Theme
+        </button>
+    </form>
+
+</div>
+
+<!-- Background -->
+<div th:style="|background-color: ${theme}; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: -1;|"></div>
+
+</body>
+</html>

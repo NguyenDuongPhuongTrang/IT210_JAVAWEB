@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Thông tin cá nhân</title>
+
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="card p-4 shadow">
+        <h3 class="text-center mb-4">Thông tin cá nhân</h3>
+
+        <form th:action="@{/save-customer}" method="post" th:object="${shop}">
+            <div class="form-group">
+                <label for="name">Tên khách hàng</label>
+                <input type="text" id="name" class="form-control" th:field="*{customerName}">
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Số điện thoại</label>
+                <input type="text" id="phone" class="form-control" th:field="*{phone}">
+            </div>
+
+            <div class="form-group">
+                <label for="address">Địa chỉ</label>
+                <input type="text" id="address" class="form-control" th:field="*{address}">
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">Tiếp</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
