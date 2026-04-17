@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="vi" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>HR - Them nhan vien</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+<div class="container mt-4">
+    <h1>Them nhan vien</h1>
+
+    <div class="alert alert-success" th:if="${message}" th:text="${message}"></div>
+
+    <form th:action="@{/hr/add-employee}" th:object="${employee}" method="post">
+        <div class="form-group">
+            <label for="fullName">Ho ten</label>
+            <input type="text" class="form-control" id="fullName" placeholder="Nhap ho ten" th:field="*{fullName}">
+            <small class="text-danger" th:errors="*{fullName}"></small>
+        </div>
+
+        <div class="form-group">
+            <label for="age">Tuoi (18-60)</label>
+            <input type="number" class="form-control" id="age" placeholder="Nhap tuoi" th:field="*{age}">
+            <small class="text-danger" th:errors="*{age}"></small>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Nhap email" th:field="*{email}">
+            <small class="text-danger" th:errors="*{email}"></small>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+</body>
+</html>

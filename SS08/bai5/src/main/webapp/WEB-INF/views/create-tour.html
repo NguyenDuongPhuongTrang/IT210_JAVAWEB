@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="vi" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo mới Tour Du Lịch</title>
+
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+
+            <div class="card shadow-sm">
+                <div class="card-body">
+
+                    <h4 class="text-center mb-3">
+                        Quản lý Tour Du Lịch - VietTravel
+                    </h4>
+                    <h5 class="text-center text-muted mb-4">
+                        Tạo mới Tour
+                    </h5>
+
+                    <!-- Success -->
+                    <div th:if="${message != null}"
+                         class="alert alert-success text-center"
+                         th:text="${message}">
+                    </div>
+
+                    <form th:action="@{/tour/create}"
+                          th:object="${tour}" method="post">
+
+                        <!-- Tour Code -->
+                        <div class="form-group">
+                            <label>Mã Tour</label>
+                            <input type="text" class="form-control"
+                                   th:field="*{tourCode}"
+                                   placeholder="VD: VN_12345">
+                            <small class="text-danger"
+                                   th:if="${#fields.hasErrors('tourCode')}"
+                                   th:errors="*{tourCode}"></small>
+                        </div>
+
+                        <!-- Adult Price -->
+                        <div class="form-group">
+                            <label>Giá người lớn</label>
+                            <input type="number" class="form-control"
+                                   th:field="*{adultPrice}">
+                            <small class="text-danger"
+                                   th:if="${#fields.hasErrors('adultPrice')}"
+                                   th:errors="*{adultPrice}"></small>
+                        </div>
+
+                        <!-- Child Price -->
+                        <div class="form-group">
+                            <label>Giá trẻ em</label>
+                            <input type="number" class="form-control"
+                                   th:field="*{childPrice}">
+                            <small class="text-danger"
+                                   th:if="${#fields.hasErrors('childPrice')}"
+                                   th:errors="*{childPrice}"></small>
+                        </div>
+
+                        <!-- Start Date -->
+                        <div class="form-group">
+                            <label>Ngày khởi hành</label>
+                            <input type="date" class="form-control"
+                                   th:field="*{startDate}">
+                            <small class="text-danger"
+                                   th:if="${#fields.hasErrors('startDate')}"
+                                   th:errors="*{startDate}"></small>
+                        </div>
+
+                        <!-- End Date -->
+                        <div class="form-group">
+                            <label>Ngày kết thúc</label>
+                            <input type="date" class="form-control"
+                                   th:field="*{endDate}">
+                            <small class="text-danger"
+                                   th:if="${#fields.hasErrors('endDate')}"
+                                   th:errors="*{endDate}"></small>
+                        </div>
+
+                        <!-- Button -->
+                        <button type="submit" class="btn btn-primary btn-block">
+                            Tạo Tour
+                        </button>
+
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

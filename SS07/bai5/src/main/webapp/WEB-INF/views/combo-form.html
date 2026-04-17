@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo Combo</title>
+
+    <!-- Bootstrap 4 CDN -->
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="card shadow-sm">
+        <div class="card-header text-center">
+            <h4>Tạo Siêu Combo</h4>
+        </div>
+
+        <div class="card-body">
+            <form th:action="@{/combo/add}" th:object="${comboDTO}" method="post" enctype="multipart/form-data">
+
+                <div class="form-group">
+                    <label>Tên combo</label>
+                    <input type="text" th:field="*{name}"
+                           class="form-control"
+                           placeholder="Nhập tên combo">
+                </div>
+
+                <div class="form-group">
+                    <label>Chọn món</label>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" th:field="*{items}" value="Phở" id="pho">
+                        <label class="form-check-label" for="pho">Phở</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" th:field="*{items}" value="Bún" id="bun">
+                        <label class="form-check-label" for="bun">Bún</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" th:field="*{items}" value="Cơm" id="com">
+                        <label class="form-check-label" for="com">Cơm</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" th:field="*{items}" value="Trà sữa" id="trasua">
+                        <label class="form-check-label" for="trasua">Trà sữa</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Ảnh combo</label>
+                    <input type="file" th:field="*{file}" class="form-control-file">
+                </div>
+
+                <button type="submit" class="btn btn-success btn-block">
+                    Tạo combo
+                </button>
+
+            </form>
+
+            <p class="text-danger mt-3" th:text="${error}"></p>
+            <p class="text-success" th:text="${message}"></p>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

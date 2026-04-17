@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="vi" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rút Tiền - FinTech E-Wallet</title>
+
+    <!-- Bootstrap 4 CDN -->
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+
+            <div th:if="${success}" class="alert alert-success text-center">
+                <h4>Giao dịch thành công!</h4>
+                <p th:text="${message}"></p>
+                <a href="/withdrawals/create" class="btn btn-success mt-3">
+                    Tiếp tục rút tiền
+                </a>
+            </div>
+
+            <div th:unless="${success}" class="card shadow-sm">
+                <div class="card-body">
+
+                    <div class="text-center mb-4">
+                        <h3>Rút Tiền</h3>
+                        <p class="text-muted">Rút tiền về ngân hàng liên kết</p>
+                    </div>
+
+                    <div class="alert alert-info">
+                        <h5>Lưu ý:</h5>
+                        <ul class="mb-0">
+                            <li><strong>Tối thiểu:</strong> 50.000 VNĐ</li>
+                            <li><strong>Bội số:</strong> 10.000 VNĐ</li>
+                            <li><strong>Hợp lệ:</strong> 50.000, 60.000</li>
+                            <li><strong>Sai:</strong> 55.000</li>
+                        </ul>
+                    </div>
+
+                    <form th:object="${bankWithdrawal}" method="POST"
+                          th:action="@{/withdrawals/create}">
+
+                        <div class="form-group">
+                            <label>ID Giao Dịch *</label>
+                            <input type="number" class="form-control"
+                                   th:field="*{transactionId}"
+                                   placeholder="Nhập ID giao dịch">
+                            <small class="text-danger"
+                                   th:if="${#fields.hasErrors('transactionId')}"
+                                   th:errors="*{transactionId}"></small>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Số Tiền Rút *</label>
+                            <input type="number" class="form-control"
+                                   th:field="*{withdrawAmount}"
+                                   placeholder="VD: 50000">
+                            <small class="form-text text-muted">
+                                Tối thiểu 50.000, bội số 10.000
+                            </small>
+                            <small class="text-danger"
+                                   th:if="${#fields.hasErrors('withdrawAmount')}"
+                                   th:errors="*{withdrawAmount}"></small>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Ngân Hàng *</label>
+                            <select class="form-control"
+                                    th:field="*{bankName}">
+                                <option value="">-- Chọn ngân hàng --</option>
+                                <option value="Vietcombank">Vietcombank</option>
+                                <option value="BIDV">BIDV</option>
+                                <option value="Agribank">Agribank</option>
+                                <option value="SHB">Sacombank</option>
+                                <option value="Techcombank">Techcombank</option>
+                                <option value="VPBank">VPBank</option>
+                                <option value="MB">MB Bank</option>
+                                <option value="ACB">ACB</option>
+                            </select>
+                            <small class="text-danger"
+                                   th:if="${#fields.hasErrors('bankName')}"
+                                   th:errors="*{bankName}"></small>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Số Tài Khoản *</label>
+                            <input type="text" class="form-control"
+                                   th:field="*{bankAccountNumber}"
+                                   placeholder="Nhập số tài khoản">
+                            <small class="text-danger"
+                                   th:if="${#fields.hasErrors('bankAccountNumber')}"
+                                   th:errors="*{bankAccountNumber}"></small>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Chủ Tài Khoản *</label>
+                            <input type="text" class="form-control"
+                                   th:field="*{accountHolder}"
+                                   placeholder="Nhập tên chủ tài khoản">
+                            <small class="text-danger"
+                                   th:if="${#fields.hasErrors('accountHolder')}"
+                                   th:errors="*{accountHolder}"></small>
+                        </div>
+
+                        <div class="d-flex justify-content-between">
+                            <button type="submit" class="btn btn-primary">
+                                Rút Tiền
+                            </button>
+                            <button type="reset" class="btn btn-secondary">
+                                Xóa
+                            </button>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

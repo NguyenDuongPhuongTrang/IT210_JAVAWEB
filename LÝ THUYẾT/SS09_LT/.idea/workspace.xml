@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f8853256-765a-4fae-bc8d-33f8ba2e06c7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../KIỂM TRA ĐẦU GIỜ/KiemtraSS10/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../KIỂM TRA ĐẦU GIỜ/KiemtraSS10/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../KIỂM TRA ĐẦU GIỜ/KiemtraSS10/.idea/material_theme_project_new.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../KIỂM TRA ĐẦU GIỜ/KiemtraSS10/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../KIỂM TRA ĐẦU GIỜ/KiemtraSS10/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../KIỂM TRA ĐẦU GIỜ/KiemtraSS10/src/main/java/org/example/project_base_spring_mvc/controller/TaskController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../KIỂM TRA ĐẦU GIỜ/KiemtraSS10/src/main/java/org/example/project_base_spring_mvc/model/dto/TaskItemDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../KIỂM TRA ĐẦU GIỜ/KiemtraSS10/src/main/java/org/example/project_base_spring_mvc/model/entity/TaskItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../KIỂM TRA ĐẦU GIỜ/KiemtraSS10/src/main/java/org/example/project_base_spring_mvc/repository/TaskRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../KIỂM TRA ĐẦU GIỜ/KiemtraSS10/src/main/java/org/example/project_base_spring_mvc/service/TaskService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../KIỂM TRA ĐẦU GIỜ/KiemtraSS10/src/main/webapp/WEB-INF/views/task-form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../KIỂM TRA ĐẦU GIỜ/KiemtraSS10/src/main/webapp/WEB-INF/views/task-list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SS07_LT/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SS07_LT/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SS07_LT/.idea/material_theme_project_new.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SS07_LT/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SS07_LT/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SS07_LT/src/main/java/lt/ss07_lt/config/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SS07_LT/src/main/java/lt/ss07_lt/config/WebInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SS07_LT/src/main/java/lt/ss07_lt/controller/StudentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SS07_LT/src/main/java/lt/ss07_lt/model/entity/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SS07_LT/src/main/webapp/WEB-INF/views/add-student.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SS07_LT/src/main/webapp/WEB-INF/views/views-student.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/SS09_LT.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../UploadImage/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../UploadImage/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../UploadImage/src/main/resources/Application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../UploadImage/src/main/webapp/WEB-INF/views/add-student.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SS07/bai1/src/main/java/ss07/bai1/config/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SS07/bai1/src/main/java/ss07/bai1/config/WebInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SS07/bai1/src/main/java/ss07/bai1/controller/Bai1Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SS07/bai1/src/main/java/ss07/bai1/model/RestaurantProfile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SS07/bai1/src/main/webapp/WEB-INF/views/restaurant-detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SS07/bai1/src/main/webapp/WEB-INF/views/restaurant.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SS07/bai2/src/main/webapp/WEB-INF/views/dish-search.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SS07/bai3/src/main/java/ss07/bai3/model/dto/FoodDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SS07/bai3/src/main/java/ss07/bai3/model/entity/Food.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SS07/bai4/src/main/java/ss07/bai4/model/dto/FoodDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SS07/bai4/src/main/java/ss07/bai4/model/entity/Food.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SS07/bai5/src/main/java/ss07/bai5/controller/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SS07/bai5/src/main/java/ss07/bai5/model/dto/ComboDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SS07/bai5/src/main/java/ss07/bai5/model/entity/Combo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SS08/bai1/src/main/java/ss08/bai1/config/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SS08/bai1/src/main/java/ss08/bai1/config/WebInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SS08/bai1/src/main/java/ss08/bai1/controller/Bai1Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SS08/bai1/src/main/java/ss08/bai1/model/dto/AddressDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SS08/bai2/src/main/java/ss08/bai2/config/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SS08/bai2/src/main/java/ss08/bai2/config/WebInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SS08/bai2/src/main/java/ss08/bai2/controller/Bai2Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SS08/bai2/src/main/java/ss08/bai2/model/EmployeeDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SS08/bai2/src/main/webapp/WEB-INF/views/employee-form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SS08/bai3/src/main/bai3.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SS08/bai3/src/main/java/ss08/bai3/annotation/MultipleOfTenThousand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SS08/bai3/src/main/java/ss08/bai3/annotation/MultipleOfTenThousandValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SS08/bai3/src/main/java/ss08/bai3/config/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SS08/bai3/src/main/java/ss08/bai3/config/WebInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SS08/bai3/src/main/java/ss08/bai3/controller/Bai3Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SS08/bai3/src/main/java/ss08/bai3/model/dto/BankWithdrawal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SS08/bai3/src/main/webapp/WEB-INF/views/bankWithdrawal.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SS08/bai4/src/main/bai4.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SS08/bai4/src/main/java/ss08/bai4/annotation/PasswordMatches.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SS08/bai4/src/main/java/ss08/bai4/annotation/PasswordMatchesValid.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SS08/bai4/src/main/java/ss08/bai4/config/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SS08/bai4/src/main/java/ss08/bai4/config/WebInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SS08/bai4/src/main/java/ss08/bai4/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SS08/bai5/src/main/Bai5.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SS08/bai5/src/main/java/ss08/bai5/annotation/TourCodeValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SS08/bai5/src/main/java/ss08/bai5/annotation/TourDatesValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SS08/bai5/src/main/java/ss08/bai5/annotation/TourPricesValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SS08/bai5/src/main/java/ss08/bai5/annotation/ValidTourCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SS08/bai5/src/main/java/ss08/bai5/annotation/ValidTourDates.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SS08/bai5/src/main/java/ss08/bai5/annotation/ValidTourPrices.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SS08/bai5/src/main/java/ss08/bai5/config/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SS08/bai5/src/main/java/ss08/bai5/config/WebInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SS08/bai5/src/main/java/ss08/bai5/controller/Bai5Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SS08/bai5/src/main/java/ss08/bai5/model/dto/TourDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SS08/bai5/src/main/webapp/WEB-INF/views/create-tour.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../KIỂM TRA ĐẦU GIỜ/KiemtraSS06/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../KIỂM TRA ĐẦU GIỜ/KiemtraSS06/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../KIỂM TRA ĐẦU GIỜ/KiemtraSS06/.idea/material_theme_project_new.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../KIỂM TRA ĐẦU GIỜ/KiemtraSS06/.idea/material_theme_project_new.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../KIỂM TRA ĐẦU GIỜ/KiemtraSS06/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../KIỂM TRA ĐẦU GIỜ/KiemtraSS06/.idea/misc.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_C:/Users/USER/OneDrive/Desktop/IT210_JAVAWEB/LÝ THUYẾT/SS09_LT" value="3CSfBlcWbb32TceYl1FdTqw0HmJ" />
+    </persistenceIdMap>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/HN_K24_CNTT02_Javaweb_Session09" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 6
+}]]></component>
+  <component name="ProjectId" id="3CSfBlcWbb32TceYl1FdTqw0HmJ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "master",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f8853256-765a-4fae-bc8d-33f8ba2e06c7" name="Changes" comment="" />
+      <created>1776383762711</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1776383762711</updated>
+      <workItem from="1776383773777" duration="2680000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
+  </component>
+</project>

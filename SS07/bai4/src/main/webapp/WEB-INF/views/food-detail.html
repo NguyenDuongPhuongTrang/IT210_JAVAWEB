@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Chi tiết món ăn</title>
+
+    <!-- Bootstrap 4 CDN -->
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="card shadow-sm">
+        <div class="card-header text-center">
+            <h4>Thông tin chi tiết món ăn</h4>
+        </div>
+
+        <div class="card-body">
+
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <img th:src="${food.imageUrl}"
+                         alt="Ảnh món ăn"
+                         class="img-fluid rounded"
+                         style="max-height: 250px; object-fit: cover;">
+                </div>
+
+                <div class="col-md-8">
+                    <p>
+                        <strong>Tên:</strong>
+                        <span th:text="${food.name}"></span>
+                    </p>
+
+                    <p>
+                        <strong>Loại:</strong>
+                        <span th:text="${food.category}"></span>
+                    </p>
+
+                    <p>
+                        <strong>Giá:</strong>
+                        <span th:text="${food.price} + ' VND'"></span>
+                    </p>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a th:href="@{/foods}" class="btn btn-secondary">
+                    Quay lại
+                </a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
