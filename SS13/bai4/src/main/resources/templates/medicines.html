@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Medicine List</title>
+
+    <!-- Bootstrap 4 CDN -->
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Medicine List</h2>
+
+    <table class="table table-bordered table-hover table-striped">
+        <thead class="thead-dark">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Unit</th>
+            <th>Expiration Date</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr th:each="medicine : ${medicines}">
+            <td th:text="${medicine.id}"></td>
+            <td th:text="${medicine.name}"></td>
+            <td th:text="${medicine.unit}"></td>
+            <td th:text="${medicine.expiryDate}"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>

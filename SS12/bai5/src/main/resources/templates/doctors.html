@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Doctor Management</title>
+
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<body class="bg-light">
+
+<div class="container mt-4">
+
+    <!-- Title -->
+    <h2 class="text-center mb-4 text-primary">Doctor Management</h2>
+
+    <!-- Add Form -->
+    <div class="card mb-4">
+        <div class="card-header bg-primary text-white">Add Doctor</div>
+        <div class="card-body">
+            <form action="/med-manager/doctors/add" method="post" class="form-row">
+
+                <div class="form-group col-md-2">
+                    <input name="id" class="form-control" placeholder="ID">
+                </div>
+
+                <div class="form-group col-md-3">
+                    <input name="name" class="form-control" placeholder="Name">
+                </div>
+
+                <div class="form-group col-md-3">
+                    <input name="phone" class="form-control" placeholder="Phone">
+                </div>
+
+                <div class="form-group col-md-2">
+                    <button class="btn btn-success btn-block">Add</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <!-- Search -->
+    <form action="/med-manager/doctors/search" method="get" class="form-inline mb-3">
+        <input name="phone" class="form-control mr-2" placeholder="Search by phone">
+        <button class="btn btn-info">Search</button>
+    </form>
+
+    <!-- Table -->
+    <table class="table table-bordered table-hover bg-white">
+        <thead class="thead-dark">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>Avatar</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr th:each="d : ${doctors}">
+            <td th:text="${d.id}"></td>
+            <td th:text="${d.name}"></td>
+            <td th:text="${d.phone}"></td>
+            <td>
+                <img th:src="@{'/images/' + ${d.avatar}}"
+                     width="60" height="60"
+                     class="rounded-circle">
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+</div>
+
+</body>
+</html>

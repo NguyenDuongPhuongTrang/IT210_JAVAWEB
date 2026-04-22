@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Project Members</title>
+
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container mt-4">
+
+    <h2 class="mb-4">Danh sách nhân sự</h2>
+
+    <!-- SEARCH + FILTER -->
+    <form method="get" class="form-inline mb-3">
+        <input type="text" name="keyword" class="form-control mr-2"
+               placeholder="Search name/email...">
+
+        <select name="position" class="form-control mr-2">
+            <option value="">All Position</option>
+            <option>Developer</option>
+            <option>Tester</option>
+            <option>PM</option>
+        </select>
+
+        <button class="btn btn-primary">Search</button>
+    </form>
+
+    <a href="/add" class="btn btn-success mb-3">+ Add Member</a>
+
+    <!-- EMPTY -->
+    <div th:if="${#lists.isEmpty(members)}" class="alert alert-warning">
+        Hiện chưa có nhân sự nào được phân bổ cho dự án này.
+    </div>
+
+    <!-- LIST -->
+    <div class="row">
+        <div class="col-md-4 mb-3" th:each="m : ${members}">
+            <div class="card text-center">
+
+                <div class="card-body">
+
+                    <!-- AVATAR -->
+                    <img th:src="@{${m.imageUrl}}"
+                         class="rounded-circle mb-3"
+                         width="100" height="100"
+                         onerror="this.src='/uploads/avatars/avatar-default.png'">
+
+                    <h5 th:text="${m.fullName}"></h5>
+
+                    <p class="mb-1"><b>Email:</b> <span th:text="${m.email}"></span></p>
+                    <p class="mb-1"><b>Position:</b> <span th:text="${m.position}"></span></p>
+                    <p class="mb-2"><b>Exp:</b> <span th:text="${m.experienceYears}"></span> years</p>
+
+                    <!-- ACTION -->
+                    <a th:href="@{'/edit/' + ${m.id}}" class="btn btn-warning btn-sm">Edit</a>
+
+                    <a th:href="@{'/delete/' + ${m.id}}"
+                       onclick="return confirm('Bạn chắc chắn muốn xóa?')"
+                       class="btn btn-danger btn-sm">Delete</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

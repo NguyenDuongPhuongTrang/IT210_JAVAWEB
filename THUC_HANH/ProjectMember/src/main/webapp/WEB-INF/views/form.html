@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Member</title>
+
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container mt-4">
+
+    <h2 class="mb-4">Form nhân sự</h2>
+
+    <form th:action="${actionUrl}"
+          method="post"
+          enctype="multipart/form-data"
+          th:object="${memberDTO}">
+
+        <!-- ID hidden -->
+        <input type="hidden" th:field="*{id}">
+
+        <!-- NAME -->
+        <div class="form-group">
+            <label>Full Name</label>
+            <input type="text" th:field="*{fullName}" class="form-control">
+            <small class="text-danger" th:errors="*{fullName}"></small>
+        </div>
+
+        <!-- EMAIL -->
+        <div class="form-group">
+            <label>Email</label>
+            <input type="text" th:field="*{email}" class="form-control">
+            <small class="text-danger" th:errors="*{email}"></small>
+        </div>
+
+        <!-- POSITION -->
+        <div class="form-group">
+            <label>Position</label>
+            <select th:field="*{position}" class="form-control">
+                <option value="Developer">Developer</option>
+                <option value="Tester">Tester</option>
+                <option value="PM">PM</option>
+            </select>
+        </div>
+        <!-- EXPERIENCE -->
+        <div class="form-group">
+            <label>Experience Years</label>
+            <input type="number" step="0.1"
+                   th:field="*{experienceYears}"
+                   class="form-control">
+            <small class="text-danger" th:errors="*{experienceYears}"></small>
+        </div>
+
+        <!-- AVATAR -->
+        <!-- AVATAR -->
+        <div class="form-group">
+            <label>Avatar</label>
+
+            <!-- Hiển thị ảnh cũ -->
+            <div th:if="${memberDTO.imageUrl != null and memberDTO.imageUrl != ''}">
+                <img th:src="@{${memberDTO.imageUrl}}"
+                     class="rounded-circle mb-3"
+                     width="120" height="120"
+                     onerror="this.src='/resources/images/avatars/avatar-default.png'">
+                <p class="text-muted small">Ảnh hiện tại</p>
+            </div>
+
+            <label class="mt-2">Chọn ảnh mới:</label>
+            <input type="file" name="imageFile" class="form-control-file">
+
+            <!-- Giữ ảnh cũ khi submit -->
+            <input type="hidden" th:field="*{imageUrl}">
+        </div>
+
+        <!-- BUTTON -->
+        <button class="btn btn-primary">Save</button>
+        <a href="/" class="btn btn-secondary">Back</a>
+
+    </form>
+
+</div>
+
+</body>
+</html>

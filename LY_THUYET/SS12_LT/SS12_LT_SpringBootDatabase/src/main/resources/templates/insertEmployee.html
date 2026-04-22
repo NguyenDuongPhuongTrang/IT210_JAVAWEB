@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Thêm mới nhân viên</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <h1>THÊM MỚI NHÂN VIÊN</h1>
+        <h3 class="text-danger" th:if="${error}" th:text="${error}"></h3>
+
+        <form th:action="@{/employees/add-employee}" method="post" th:object="${employee}">
+            <div class="form-group">
+                <label for="empName">Họ tên nhân viên</label>
+                <input type="text" class="form-control" id="empName" th:field="*{empName}">
+                <small th:if="${#fields.hasErrors('empName')}" th:errors="*{empName}" class="text-danger"></small>
+            </div>
+            <div class="form-group">
+                <label for="gender">Giới tính</label>
+                <input type="radio" id="gender" th:field="*{gender}" value="true">Nam
+                <input type="radio" id="female" th:field="*{gender}" value="false">Nữ
+                <small th:if="${#fields.hasErrors('gender')}" th:errors="*{gender}" class="text-danger"></small>
+            </div>
+            <div class="form-group">
+                <label for="birthday">Ngày sinh</label>
+                <input type="date" class="form-control" id="birthday" th:field="*{birthday}">
+                <small th:if="${#fields.hasErrors('birthday')}" th:errors="*{birthday}" class="text-danger"></small>
+            </div>
+            <div class="form-group">
+                <label for="address">Quê quán</label>
+                <textarea class="form-control" id="address" th:field="*{address}" rows="3"></textarea>
+                <small th:if="${#fields.hasErrors('address')}" th:errors="*{address}" class="text-danger"></small>
+            </div>
+            <div class="form-group">
+                <label for="company">Công ty</label>
+                <input type="text" class="form-control" id="company" th:field="*{company}">
+                <small th:if="${#fields.hasErrors('company')}" th:errors="*{company}" class="text-danger"></small>
+            </div>
+            <div class="form-group">
+                <label for="salary">Lương</label>
+                <input type="text" class="form-control" id="salary" th:field="*{salary}">
+                <small th:if="${#fields.hasErrors('salary')}" th:errors="*{salary}" class="text-danger"></small>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Thêm mới" class="btn btn-primary">
+                <input type="reset" value="Làm lại" class="btn btn-secondary">
+            </div>
+        </form>
+        <a th:href="@{/employees}">Trở lại</a>
+    </div>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+</html>

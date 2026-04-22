@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Danh sách nhân viên</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div th:if="${list.size()==0}">
+            <h4 class="text-danger">Chưa có nhân viên nào</h4>
+        </div>
+        <div th:if="${list.size()>0}">
+            <h1>DANH SÁCH NHÂN VIÊN</h1>
+            <table class="table table-bordered table-striped">
+                <tr>
+                    <th>Số thứ tự</th>
+                    <th>Mã nhân viên</th>
+                    <th>Họ tên</th>
+                    <th>Giới tính</th>
+                    <th>Ngày sinh</th>
+                    <th>Quê quán</th>
+                    <th>Công ty</th>
+                    <th>Lương</th>
+                </tr>
+                <tr th:each="e,index:${list}">
+                    <td th:text="${index.count}"></td>
+                    <td th:text="${e.empId}"></td>
+                    <td th:text="${e.empName}"></td>
+                    <td th:text="${e.gender?'Nam':'Nữ'}"></td>
+                    <td th:text="${#dates.format(e.birthday,'dd/MM/yyyy')}"></td>
+                    <td th:text="${e.address}"></td>
+                    <td th:text="${e.company}"></td>
+                    <td th:text="${#numbers.formatDecimal(e.salary,0,'COMMA',0,'POINT')}"></td>
+                </tr>
+            </table>
+        </div>
+        <a th:href="@{/employees/add-employee}">Thêm mới nhân viên</a>
+    </div>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+</html>

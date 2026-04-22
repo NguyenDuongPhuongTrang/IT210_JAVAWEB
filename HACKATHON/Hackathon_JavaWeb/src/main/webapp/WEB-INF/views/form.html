@@ -1,10 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Form Member</title>
+
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 <body>
-$END$
-</body>
-</html>
+
+<div class="container mt-4">
+    <h2 class="mb-4">Form</h2>
+    <form th:action="${actionUrl}" method="post" enctype="multipart/form-data" th:object="${employeeDTO}">
+        <input type="hidden" th:field="*{id}">
+
+        <div class="form-group">
+            <label>Họ và tên: </label>
+            <input type="text" th:field="*{fullName}" class="form-control">
+            <small class="text-danger" th:errors="*{fullName}"></small>
+        </div>
+
+        <div class="form-group">
+            <label>Position</label>
+            <select th:field="*{position}" class="form-control">
+                <option value="Developer">Developer</option>
+                <option value="Tester">Tester</option>
+                <option value="PM">PM</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Lương: </label>
+            <input type="number" step="100000" th:field="*{salary}" class="form-control">
+            <small class="text-danger" th:errors="*{salary}"></small>
+        </div>
+
+        <div class="form-group">
+            <label>Chọn ảnh: </label>
+
+            <div th:if="${employeeDTO.avatarUrl != null and !employeeDTO.avatarUrl.isEmpty()}">
+                <img th:src="@{${employeeDTO.avatarUrl}}" width="120" height="120" class="rounded-circle mb-2"
+                     onerror="this.src='/resources/images/avatars/avatar-default.png'">
+                <p class="text-muted small">Ảnh hiện tại</p>
+            </div>
+
+            <input type="file" name="avatar" class="form-control-file">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Save</button>
+        <a href="/" class="btn btn-secondary">Back</a>
+
+    </form>
+
+</div>
