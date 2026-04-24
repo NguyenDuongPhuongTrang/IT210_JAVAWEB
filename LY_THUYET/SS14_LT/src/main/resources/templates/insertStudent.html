@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Thêm mới sinh viên</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <h1>THÊM MỚI SINH VIÊN</h1>
+        <h3 th:if="${error}" th:text="${error}" class="text-danger"></h3>
+
+        <form th:action="@{/students/add}" th:object="${s}" method="post">
+            <div class="form-group">
+                <label for="fullName">Họ tên sinh viên</label>
+                <input type="text" id="fullName" th:field="*{fullName}" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="male">Giới tính</label>
+                <input type="radio" id="male" th:field="*{gender}" value="true">Nam
+                <input type="radio" id="female" th:field="*{gender}" value="false">Nữ
+            </div>
+            <div class="form-group">
+                <label for="birthday">Ngày sinh</label>
+                <input type="date" id="birthday" th:field="*{birthday}" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="address">Quê quán</label>
+                <textarea id="address" th:field="*{address}" class="form-control"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="classes">Lớp học</label>
+                <select type="text" id="classes" th:field="*{classes.classId}" class="form-control">
+                    <option value="">-------- Chọn lớp học ---------</option>
+                    <option th:each="c:${listClass}" th:text="${c.className}" th:value="${c.classId}"></option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Thêm mới" class="btn btn-primary">
+                <input type="reset" value="Làm lại" class="btn btn-secondary">
+            </div>
+        </form>
+    </div>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+</html>

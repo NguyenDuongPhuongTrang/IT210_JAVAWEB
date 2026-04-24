@@ -4,281 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6cfc745c-33ba-4e1d-be57-a27ce8981289" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../SS12/bai1/src/main/java/bai1.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SS12/bai2/src/main/java/bai2.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SS12/bai3/src/main/java/bai3.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SS12/bai3/src/main/java/bt/bai3/HospitalComponent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SS12/bai4/src/main/java/bai4.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SS12/bai4/src/main/java/bt/bai4/controller/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SS12/bai4/src/main/resources/templates/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SS12/bai5/src/main/java/bai5.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SS12/bai5/src/main/java/bt/bai5/controller/DoctorController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SS12/bai5/src/main/java/bt/bai5/model/Doctor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SS12/bai5/src/main/java/bt/bai5/repository/DoctorRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SS12/bai5/src/main/java/bt/bai5/service/DoctorService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SS12/bai5/src/main/java/bt/bai5/service/impl/DoctorServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../SS12/bai5/src/main/resources/templates/doctors.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../HACKATHON/Hackathon_JavaWeb/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../HACKATHON/Hackathon_JavaWeb/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../HACKATHON/Hackathon_JavaWeb/src/main/java/hk/javaweb/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../HACKATHON/Hackathon_JavaWeb/src/main/java/hk/javaweb/controller/EmployeeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../HACKATHON/Hackathon_JavaWeb/src/main/java/hk/javaweb/model/dto/EmployeeDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../HACKATHON/Hackathon_JavaWeb/src/main/java/hk/javaweb/model/dto/EmployeeDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../HACKATHON/Hackathon_JavaWeb/src/main/java/hk/javaweb/model/entity/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../HACKATHON/Hackathon_JavaWeb/src/main/java/hk/javaweb/model/entity/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../HACKATHON/Hackathon_JavaWeb/src/main/java/hk/javaweb/repository/EmployeeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../HACKATHON/Hackathon_JavaWeb/src/main/java/hk/javaweb/repository/EmployeeRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../HACKATHON/Hackathon_JavaWeb/src/main/java/hk/javaweb/service/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../HACKATHON/Hackathon_JavaWeb/src/main/java/hk/javaweb/service/EmployeeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../HACKATHON/Hackathon_JavaWeb/src/main/java/hk/javaweb/service/impl/EmployeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../HACKATHON/Hackathon_JavaWeb/src/main/java/hk/javaweb/service/impl/EmployeeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../HACKATHON/Hackathon_JavaWeb/src/main/webapp/WEB-INF/views/employees.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../HACKATHON/Hackathon_JavaWeb/src/main/webapp/WEB-INF/views/employees.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../HACKATHON/Hackathon_JavaWeb/src/main/webapp/WEB-INF/views/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../HACKATHON/Hackathon_JavaWeb/src/main/webapp/WEB-INF/views/form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../KIỂM TRA ĐẦU GIỜ/KiemtraSS06/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../KIỂM TRA ĐẦU GIỜ/KiemtraSS06/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../KIỂM TRA ĐẦU GIỜ/KiemtraSS06/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../KIỂM TRA ĐẦU GIỜ/KiemtraSS06/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../KIỂM TRA ĐẦU GIỜ/KiemtraSS06/.idea/material_theme_project_new.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../KIỂM TRA ĐẦU GIỜ/KiemtraSS06/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../KIỂM TRA ĐẦU GIỜ/KiemtraSS06/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../KIỂM TRA ĐẦU GIỜ/KiemtraSS06/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../KIỂM TRA ĐẦU GIỜ/KiemtraSS06/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../KIỂM TRA ĐẦU GIỜ/KiemtraSS06/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../KIỂM TRA ĐẦU GIỜ/KiemtraSS06/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../KIỂM TRA ĐẦU GIỜ/KiemtraSS06/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../KIỂM TRA ĐẦU GIỜ/KiemtraSS06/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../KIỂM TRA ĐẦU GIỜ/KiemtraSS06/src/main/java/kt/ss06/config/WebConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../KIỂM TRA ĐẦU GIỜ/KiemtraSS06/src/main/java/kt/ss06/config/WebInit.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../KIỂM TRA ĐẦU GIỜ/KiemtraSS06/src/main/java/kt/ss06/controller/BookController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../KIỂM TRA ĐẦU GIỜ/KiemtraSS06/src/main/java/kt/ss06/model/Book.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../KIỂM TRA ĐẦU GIỜ/KiemtraSS06/src/main/java/kt/ss06/repository/BookRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../KIỂM TRA ĐẦU GIỜ/KiemtraSS06/src/main/java/kt/ss06/repository/impl/BookRepositoryImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../KIỂM TRA ĐẦU GIỜ/KiemtraSS06/src/main/java/kt/ss06/service/BookService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../KIỂM TRA ĐẦU GIỜ/KiemtraSS06/src/main/java/kt/ss06/service/impl/BookServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../KIỂM TRA ĐẦU GIỜ/KiemtraSS06/src/main/webapp/WEB-INF/views/book.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../KIỂM TRA ĐẦU GIỜ/KiemtraSS06/src/main/webapp/WEB-INF/views/detail.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../KIỂM TRA ĐẦU GIỜ/KiemtraSS06/src/main/webapp/WEB-INF/views/fragment/main-layout.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../KIỂM TRA ĐẦU GIỜ/KiemtraSS06/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../KIỂM TRA ĐẦU GIỜ/KiemtraSS10/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../KIỂM TRA ĐẦU GIỜ/KiemtraSS10/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../KIỂM TRA ĐẦU GIỜ/KiemtraSS10/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../KIỂM TRA ĐẦU GIỜ/KiemtraSS10/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../KIỂM TRA ĐẦU GIỜ/KiemtraSS10/.idea/material_theme_project_new.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../KIỂM TRA ĐẦU GIỜ/KiemtraSS10/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../KIỂM TRA ĐẦU GIỜ/KiemtraSS10/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../KIỂM TRA ĐẦU GIỜ/KiemtraSS10/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../KIỂM TRA ĐẦU GIỜ/KiemtraSS10/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../KIỂM TRA ĐẦU GIỜ/KiemtraSS10/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../KIỂM TRA ĐẦU GIỜ/KiemtraSS10/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../KIỂM TRA ĐẦU GIỜ/KiemtraSS10/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../KIỂM TRA ĐẦU GIỜ/KiemtraSS10/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../KIỂM TRA ĐẦU GIỜ/KiemtraSS10/src/main/java/org/example/project_base_spring_mvc/configs/AppConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../KIỂM TRA ĐẦU GIỜ/KiemtraSS10/src/main/java/org/example/project_base_spring_mvc/configs/WebInit.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../KIỂM TRA ĐẦU GIỜ/KiemtraSS10/src/main/java/org/example/project_base_spring_mvc/controller/TaskController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../KIỂM TRA ĐẦU GIỜ/KiemtraSS10/src/main/java/org/example/project_base_spring_mvc/model/dto/TaskItemDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../KIỂM TRA ĐẦU GIỜ/KiemtraSS10/src/main/java/org/example/project_base_spring_mvc/model/entity/TaskItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../KIỂM TRA ĐẦU GIỜ/KiemtraSS10/src/main/java/org/example/project_base_spring_mvc/repository/TaskRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../KIỂM TRA ĐẦU GIỜ/KiemtraSS10/src/main/java/org/example/project_base_spring_mvc/service/TaskService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../KIỂM TRA ĐẦU GIỜ/KiemtraSS10/src/main/webapp/WEB-INF/views/task-form.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../KIỂM TRA ĐẦU GIỜ/KiemtraSS10/src/main/webapp/WEB-INF/views/task-list.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../KIỂM TRA ĐẦU GIỜ/KiemtraSS10/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS01_LT/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS01_LT/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS01_LT/.idea/copilot.data.migration.ask2agent.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS01_LT/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS01_LT/.idea/material_theme_project_new.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS01_LT/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS01_LT/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS01_LT/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS01_LT/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS01_LT/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS01_LT/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS01_LT/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS01_LT/src/main/java/com/example/ss01_lt/HelloServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS01_LT/src/main/resources/META-INF/beans.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS01_LT/src/main/resources/META-INF/persistence.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS01_LT/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS01_LT/src/main/webapp/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS02_LT/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS02_LT/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS02_LT/.idea/copilot.data.migration.ask2agent.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS02_LT/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS02_LT/.idea/material_theme_project_new.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS02_LT/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS02_LT/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS02_LT/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS02_LT/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS02_LT/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS02_LT/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS02_LT/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS02_LT/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS02_LT/src/main/java/demo/ss02/ss02_lt/config/WebConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS02_LT/src/main/java/demo/ss02/ss02_lt/config/WebInit.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS02_LT/src/main/java/demo/ss02/ss02_lt/controller/ProductController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS02_LT/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS02_LT/src/main/webapp/views/Jstl.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS02_LT/src/main/webapp/views/listProducts.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS04_LT/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS04_LT/.idea/SS04_LT.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS04_LT/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS04_LT/.idea/material_theme_project_new.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS04_LT/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS04_LT/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS04_LT/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS04_LT/HN_K24_CNTT02_Javaweb_Session04" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS05_LT/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS05_LT/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS05_LT/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS05_LT/.idea/material_theme_project_new.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS05_LT/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS05_LT/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS05_LT/.idea/webContexts.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS05_LT/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS05_LT/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS05_LT/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS05_LT/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS05_LT/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS05_LT/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS05_LT/src/main/java/ss05/lt/config/WebConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS05_LT/src/main/java/ss05/lt/config/WebInit.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS05_LT/src/main/java/ss05/lt/controller/HelloController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS05_LT/src/main/webapp/WEB-INF/views/fragment/layout.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS05_LT/src/main/webapp/WEB-INF/views/home.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS05_LT/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS07_LT/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS07_LT/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS07_LT/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS07_LT/.idea/material_theme_project_new.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS07_LT/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS07_LT/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS07_LT/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS07_LT/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS07_LT/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS07_LT/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS07_LT/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS07_LT/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS07_LT/src/main/java/lt/ss07_lt/config/WebConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS07_LT/src/main/java/lt/ss07_lt/config/WebInit.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS07_LT/src/main/java/lt/ss07_lt/controller/StudentController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS07_LT/src/main/java/lt/ss07_lt/model/entity/Student.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS07_LT/src/main/webapp/WEB-INF/views/add-student.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS07_LT/src/main/webapp/WEB-INF/views/views-student.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS07_LT/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS09_LT/.idea/SS09_LT.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS09_LT/.idea/material_theme_project_new.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS09_LT/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS09_LT/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS09_LT/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS09_LT/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/SS09_LT/HN_K24_CNTT02_Javaweb_Session09" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/UploadImage/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/UploadImage/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/UploadImage/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/UploadImage/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/UploadImage/.idea/material_theme_project_new.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/UploadImage/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/UploadImage/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/UploadImage/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/UploadImage/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/UploadImage/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/UploadImage/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/UploadImage/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/UploadImage/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/UploadImage/src/main/java/upload/updateload_image/config/WebConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/UploadImage/src/main/java/upload/updateload_image/config/WebInit.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/UploadImage/src/main/java/upload/updateload_image/controller/StudentController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/UploadImage/src/main/java/upload/updateload_image/model/dto/StudentDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/UploadImage/src/main/java/upload/updateload_image/model/entity/Student.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/UploadImage/src/main/java/upload/updateload_image/service/UploadImage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/UploadImage/src/main/java/upload/updateload_image/service/impl/UploadImageImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/UploadImage/src/main/resources/Application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/UploadImage/src/main/webapp/WEB-INF/views/add-student.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/UploadImage/src/main/webapp/WEB-INF/views/view-student.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../LÝ THUYẾT/UploadImage/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SS09/bai5/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../SS09/bai5/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../SS09/bai5/.idea/material_theme_project_new.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../SS09/bai5/.idea/material_theme_project_new.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../THỰC HÀNH/ProjectDetail_SS04/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../THỰC HÀNH/ProjectDetail_SS04/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../THỰC HÀNH/ProjectDetail_SS04/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../THỰC HÀNH/ProjectDetail_SS04/.idea/material_theme_project_new.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../THỰC HÀNH/ProjectDetail_SS04/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../THỰC HÀNH/ProjectDetail_SS04/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../THỰC HÀNH/ProjectDetail_SS04/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../THỰC HÀNH/ProjectDetail_SS04/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../THỰC HÀNH/ProjectDetail_SS04/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../THỰC HÀNH/ProjectDetail_SS04/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../THỰC HÀNH/ProjectDetail_SS04/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../THỰC HÀNH/ProjectDetail_SS04/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../THỰC HÀNH/ProjectDetail_SS04/src/main/java/th/projectdetail_ss04/config/WebConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../THỰC HÀNH/ProjectDetail_SS04/src/main/java/th/projectdetail_ss04/config/WebInit.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../THỰC HÀNH/ProjectDetail_SS04/src/main/java/th/projectdetail_ss04/controller/ProjectController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../THỰC HÀNH/ProjectDetail_SS04/src/main/java/th/projectdetail_ss04/model/entity/Project.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../THỰC HÀNH/ProjectDetail_SS04/src/main/java/th/projectdetail_ss04/repository/ProjectRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../THỰC HÀNH/ProjectDetail_SS04/src/main/java/th/projectdetail_ss04/repository/impl/ProjectRepositoryImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../THỰC HÀNH/ProjectDetail_SS04/src/main/java/th/projectdetail_ss04/service/ProjectService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../THỰC HÀNH/ProjectDetail_SS04/src/main/java/th/projectdetail_ss04/service/impl/ProjectServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../THỰC HÀNH/ProjectDetail_SS04/src/main/webapp/WEB-INF/views/project/project-details.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../THỰC HÀNH/ProjectDetail_SS04/src/main/webapp/WEB-INF/views/project/project-list.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../THỰC HÀNH/ProjectDetail_SS04/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../THỰC HÀNH/ProjectMember/src/main/java/th/projectmember/config/WebConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../THỰC HÀNH/ProjectMember/src/main/java/th/projectmember/config/WebInit.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../THỰC HÀNH/ProjectMember/src/main/java/th/projectmember/controller/ProjectMemberController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../THỰC HÀNH/ProjectMember/src/main/java/th/projectmember/model/dto/ProjectMemberDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../THỰC HÀNH/ProjectMember/src/main/java/th/projectmember/model/entity/ProjectMember.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../THỰC HÀNH/ProjectMember/src/main/java/th/projectmember/repository/ProjectMemberRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../THỰC HÀNH/ProjectMember/src/main/java/th/projectmember/service/ProjectMemberService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../THỰC HÀNH/ProjectMember/src/main/java/th/projectmember/service/UploadFile.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../THỰC HÀNH/ProjectMember/src/main/java/th/projectmember/service/impl/ProjectMemberServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../THỰC HÀNH/ProjectMember/src/main/java/th/projectmember/service/impl/UploadFileImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../THỰC HÀNH/ProjectMember/src/main/webapp/WEB-INF/views/form.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../THỰC HÀNH/ProjectMember/src/main/webapp/WEB-INF/views/list.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../THỰC HÀNH/ReviewHackathon/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../THỰC HÀNH/ReviewHackathon/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../THỰC HÀNH/ReviewHackathon/.idea/material_theme_project_new.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../THỰC HÀNH/ReviewHackathon/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../THỰC HÀNH/ReviewHackathon/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../THỰC HÀNH/SpringWebMVC/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../THỰC HÀNH/SpringWebMVC/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../THỰC HÀNH/SpringWebMVC/.idea/copilot.data.migration.ask2agent.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../THỰC HÀNH/SpringWebMVC/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../THỰC HÀNH/SpringWebMVC/.idea/material_theme_project_new.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../THỰC HÀNH/SpringWebMVC/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../THỰC HÀNH/SpringWebMVC/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../THỰC HÀNH/SpringWebMVC/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../THỰC HÀNH/SpringWebMVC/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../THỰC HÀNH/SpringWebMVC/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../THỰC HÀNH/SpringWebMVC/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../THỰC HÀNH/SpringWebMVC/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../THỰC HÀNH/SpringWebMVC/src/main/java/demo/bai1/springwebmvc/config/WebConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../THỰC HÀNH/SpringWebMVC/src/main/java/demo/bai1/springwebmvc/config/WebInit.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../THỰC HÀNH/SpringWebMVC/src/main/java/demo/bai1/springwebmvc/container/HomeController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../THỰC HÀNH/SpringWebMVC/src/main/resources/META-INF/beans.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../THỰC HÀNH/SpringWebMVC/src/main/resources/META-INF/persistence.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../THỰC HÀNH/SpringWebMVC/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../THỰC HÀNH/SpringWebMVC/src/main/webapp/views/home.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../THỰC HÀNH/Student_SS02/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../THỰC HÀNH/Student_SS02/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../THỰC HÀNH/Student_SS02/.idea/copilot.data.migration.ask2agent.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../THỰC HÀNH/Student_SS02/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../THỰC HÀNH/Student_SS02/.idea/material_theme_project_new.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../THỰC HÀNH/Student_SS02/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../THỰC HÀNH/Student_SS02/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../THỰC HÀNH/Student_SS02/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../THỰC HÀNH/Student_SS02/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../THỰC HÀNH/Student_SS02/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../THỰC HÀNH/Student_SS02/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../THỰC HÀNH/Student_SS02/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../THỰC HÀNH/Student_SS02/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../THỰC HÀNH/Student_SS02/src/main/java/demo/ss02/student_ss02/config/WebConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../THỰC HÀNH/Student_SS02/src/main/java/demo/ss02/student_ss02/config/WebInit.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../THỰC HÀNH/Student_SS02/src/main/java/demo/ss02/student_ss02/controller/HomeController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../THỰC HÀNH/Student_SS02/src/main/java/demo/ss02/student_ss02/model/Student.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../THỰC HÀNH/Student_SS02/src/main/webapp/views/home.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../demo/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../demo/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../demo/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../demo/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../demo/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../demo/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../demo/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../demo/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../demo/src/main/java/hk/demo/HelloApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../demo/src/main/java/hk/demo/HelloResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../demo/src/main/resources/META-INF/beans.xml" beforeDir="false" />
+    <list default="true" id="9b968cd4-5ab1-40fc-a425-e9324c27eb23" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../SS04_LT/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../SS04_LT/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SS04_LT/.idea/SS04_LT.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SS04_LT/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SS04_LT/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SS04_LT/.idea/material_theme_project_new.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SS04_LT/.idea/material_theme_project_new.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SS04_LT/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SS04_LT/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SS04_LT/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SS04_LT/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SS04_LT/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SS04_LT/HN_K24_CNTT02_Javaweb_Session04" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HN_K24_CNTT02_Javaweb_Session13" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../UploadImage/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../UploadImage/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../SS13/bai5/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../SS13/bai5/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -287,7 +29,7 @@
   </component>
   <component name="CopilotPersistence">
     <persistenceIdMap>
-      <entry key="_C:/Users/USER/OneDrive/Desktop/IT210_JAVAWEB/LY_THUYET/SS13_LT" value="3Cgt4SzDmeEgwrPmMnlqqQjCBFX" />
+      <entry key="_C:/Users/Windows/Desktop/IT210_JAVAWEB/LY_THUYET/SS13_LT" value="3Cl84nhV4NWfCLIgRdUZsNIQVZI" />
     </persistenceIdMap>
   </component>
   <component name="ExternalProjectsData">
@@ -295,25 +37,17 @@
       <ProjectState />
     </projectState>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Interface" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4,
-  "fromUser": false
-}]]></component>
-  <component name="ProjectId" id="3Cgt4SzDmeEgwrPmMnlqqQjCBFX" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="3Cl84nhV4NWfCLIgRdUZsNIQVZI" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -321,40 +55,45 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
     "git-widget-placeholder": "main",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
+    "last_opened_file_path": "C:/Users/Windows/Desktop/IT210_JAVAWEB/LY_THUYET/SS13_LT",
     "to.speed.mode.migration.done": "true",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RunManager">
-    <configuration name="Ss13LtApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+    <configuration name="SpringBootHibernateApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
-      <module name="SS13_LT.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="lt.ss13_lt.Ss13LtApplication" />
+      <module name="SpringBoot_Hibernate.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ra.edu.SpringBootHibernateApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.30387.90" />
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-IU-253.30387.90" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="6cfc745c-33ba-4e1d-be57-a27ce8981289" name="Changes" comment="" />
-      <created>1776818850241</created>
+      <changelist id="9b968cd4-5ab1-40fc-a425-e9324c27eb23" name="Changes" comment="" />
+      <created>1776948607334</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1776818850241</updated>
-      <workItem from="1776818854078" duration="5891000" />
+      <updated>1776948607334</updated>
+      <workItem from="1776948608415" duration="27000" />
     </task>
     <servers />
   </component>
