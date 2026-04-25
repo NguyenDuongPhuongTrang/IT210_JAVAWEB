@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+<div class="container mx-auto">
+    <h1 class="text-center">Thêm Todo</h1>
+    <form th:action="@{/add-todo}" method="post" th:object="${todo}" class="mx-auto">
+        <div class="form-group">
+            <label for="content">Nội dung</label>
+            <input type="text" class="form-control" id="content" th:field="*{content}">
+            <p th:if="${#fields.hasErrors('content')}" th:errors="*{content}"
+               class="text-danger">
+            </p>
+        </div>
+        <div class="form-group">
+            <label for="dueDate">Ngày hết hạn</label>
+            <input type="date" class="form-control" id="dueDate" th:field="*{dueDate}">
+            <p th:if="${#fields.hasErrors('dueDate')}" th:errors="*{dueDate}"
+               class="text-danger">
+            </p>
+        </div>
+        <div class="form-group">
+            <label for="status">Trạng thái</label>
+            <select th:class="form-control" id="status" th:field="*{status}">
+                <option value="notDone">Chưa hoàn thành</option>
+                <option value="done">Hoàn thành</option>
+            </select>
+            <p th:if="${#fields.hasErrors('status')}" th:errors="*{status}" class="text-danger">
+            </p>
+        </div>
+        <div th:class="form-group">
+            <label for="priority">Độ ưu tiên</label>
+            <select class="form-control" id="priority" th:field="*{priority}">
+                <option value="low">Thấp</option>
+                <option value="medium">Trung bình</option>
+                <option value="high">Cao</option>
+            </select>
+        </div>
+        <div class="flex justify-content-end align-items-center mt-3">
+            <a th:href="@{/todo}" class="btn btn-secondary">Quay lại</a>
+            <button type="submit" class="btn btn-primary">Thêm</button>
+        </div>
+    </form>
+</div>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+</html>
