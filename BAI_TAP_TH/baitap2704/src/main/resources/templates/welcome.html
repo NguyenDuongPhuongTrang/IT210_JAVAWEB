@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Welcome</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+<div class="container">
+    <div class="row justify-content-center align-items-center" style="height:100vh">
+        <div class="col-md-5">
+            <div class="card shadow">
+                <div class="card-body">
+                    <h4 class="text-center mb-4">Nhập tên của bạn</h4>
+                    <form action="/save-name" method="post">
+                        <div class="form-group">
+                            <input type="text"
+                                   name="name"
+                                   class="form-control"
+                                   placeholder="Tên của bạn">
+                        </div>
+                        <button type="submit"
+                                class="btn btn-primary btn-block">
+                            Bắt đầu
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

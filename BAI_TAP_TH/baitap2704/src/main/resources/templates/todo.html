@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Todo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container mt-4">
+    <div class="text-right">
+        <a href="?lang=vi">VI</a> | <a href="?lang=en">EN</a>
+    </div>
+
+    <h4>
+        <span th:text="#{owner.label}"></span>
+        <span th:text="${ownerName}"></span>
+    </h4>
+
+    <h1 class="text-center" th:text="#{title.todo}"></h1>
+
+    <a th:href="@{/add-todo}" class="btn btn-primary mb-3"
+       th:text="#{button.add}"></a>
+
+    <div th:if="${message}" class="alert alert-success">
+        <span th:text="${message}"></span>
+    </div>
+
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th th:text="#{label.content}"></th>
+            <th th:text="#{label.dueDate}"></th>
+            <th th:text="#{label.status}"></th>
+            <th th:text="#{label.priority}"></th>
+            <th th:text="#{button.edit}"></th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr th:each="todo : ${todos}">
+            <td th:text="${todo.id}"></td>
+            <td th:text="${todo.content}"></td>
+            <td th:text="${#temporals.format(todo.dueDate, 'dd/MM/yyyy')}"></td>
+
+            <td th:text="#{'status.' + ${todo.status}}"></td>
+            <td th:text="#{'priority.' + ${todo.priority}}"></td>
+
+            <td>
+                <a class="text-danger"
+                   onclick="return confirm('Are you sure?')"
+                   th:href="@{/delete(id=${todo.id})}"
+                   th:text="#{button.delete}"></a>
+                |
+                <a th:href="@{/todo/edit/{id}(id=${todo.id})}"
+                   th:text="#{button.edit}"></a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+</div>
+
+</body>
+</html>
